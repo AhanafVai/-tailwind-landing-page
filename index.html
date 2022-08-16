@@ -1,101 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Manage landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Manage landing page</title>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="container mx-auto pt-10 px-10 pb-5 flex justify-between relative"
+      >
+        <!-- Logo -->
+        <figure>
+          <img src="images/logo.svg" alt="manage" />
+        </figure>
+        <!-- Hamburger -->
+        <figure id="hamburger" class="cursor-pointer">
+          <img src="images/icon-hamburger.svg" alt="Hamburger" />
+        </figure>
+        <!-- Hamburger-off -->
+        <figure id="off" class="cursor-pointer hidden">
+          <img src="images/icon-close.svg" alt="closed" />
+        </figure>
+        <!-- Mobile Menu -->
+        <ul
+          id="menu"
+          class="hidden absolute font-bold bg-white drop-shadow-md w-[85%] p-6 space-y-6 flex flex-col items-center top-28"
+        >
+          <li>Pricing</li>
+          <li>Product</li>
+          <li>AboutUs</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <main>
+      <!-- Flex-container -->
+      <section class="container mx-auto pt-5 px-10 pb-10">
+        <figure class="pb-5">
+          <img
+            class="max-w-full h-auto block"
+            src="images/illustration-intro.svg"
+            alt="analytics"
+          />
+        </figure>
+        <article>
+          <h1 class="text-4xl font-bold text-center">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="text-base text-darkGrayishBlue pt-4 px-14 pb-5 text-center">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <!-- Button -->
+          <div class="flex justify-center">
+            <a
+              href="#"
+              class="py-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              >Get Started</a
+            >
+          </div>
+        </article>
+      </section>
+    </main>
 
-  Get Started
+    <!-- Aside -->
+    <aside>
+      <!-- About -->
+      <section class="container mx-auto px-10 pt-20 pb-20">
+        <!-- intro -->
+        <article>
+          <h3 class="text-center text-3xl px-16 font-bold pb-5">
+            What’s different about Manage?
+          </h3>
+          <p class="px-12 text-center text-darkGrayishBlue">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </article>
+        <!-- Item-1 -->
+        <article>
+          <div
+            class="mt-10 mb-5 bg-brightRedSupLight flex items-center space-x-2 rounded-tl-full rounded-bl-full"
+          >
+            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              01
+            </div>
+            <h3 class="text-base font-bold md:mb-4 md:hidden">
+              Track company-wide progress
+            </h3>
+          </div>
+          <p class="text-darkGrayishBlue px-3 text-base">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </article>
+        <!-- Item-2 -->
+        <article>
+          <div
+            class="mt-10 mb-5 bg-brightRedSupLight flex items-center space-x-2 rounded-tl-full rounded-bl-full"
+          >
+            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              02
+            </div>
+            <h3 class="text-base font-bold md:mb-4 md:hidden">
+              Advanced built-in reports
+            </h3>
+          </div>
+          <p class="text-darkGrayishBlue px-3 text-base">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </article>
+        <!-- Item-3 -->
+        <article>
+          <div
+            class="mt-10 mb-5 bg-brightRedSupLight flex items-center space-x-2 rounded-tl-full rounded-bl-full"
+          >
+            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              03
+            </div>
+            <h3 class="text-base font-bold md:mb-4 md:hidden">
+              Everything you need in one place
+            </h3>
+          </div>
+          <p class="text-darkGrayishBlue px-3 text-base">
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </article>
+      </section>
+    </aside>
 
-  Bring everyone together to build better products.
+    <!--   What they’ve said Anisha Li “Manage has supercharged our team’s workflow. The ability to
+    maintain visibility on larger milestones at all times keeps everyone
+    motivated.” Ali Bravo “We have been able to cancel so many other
+    subscriptions since using Manage. There is no more cross-channel confusion
+    and everyone is much more focused.” Richard Watts “Manage allows us to
+    provide structure and process. It keeps us organized and focused. I can’t
+    stop recommending them to everyone I talk to!” Shanai Gough “Their software
+    allows us to track, manage and collaborate on our projects from anywhere. It
+    keeps the whole team in-sync without being intrusive.” Get Started Simplify
+    how your team works today. Get Started Home Pricing Products About Us
+    Careers Community Privacy Policy Updates in your inbox… Go Copyright 2020.
+    All Rights Reserved -->
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="app.js"></script>
+  </body>
 </html>

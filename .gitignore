@@ -1,4 +1,5 @@
 node_modules
+.prettierrc
 design
 README-template.md
 style-guide.md
