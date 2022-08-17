@@ -1,6 +1,7 @@
 const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector("#menu");
 const off = document.querySelector("#off");
+const body = document.querySelector("#body");
 
 // open menu
 hamburger.addEventListener("click", () => {
