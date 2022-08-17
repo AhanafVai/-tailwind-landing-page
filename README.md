@@ -25,7 +25,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/AhanafVai/-tailwind-landing-page)
-- Live Site URL: [live site]()
+- Live Site URL: [live site](manage-tailwindpage.netlify.app)
 
 ## My process
 
